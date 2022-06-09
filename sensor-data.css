@@ -1,0 +1,86 @@
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px #00000026;
+}
+
+table {
+    height: 500px;
+    overflow-y: scroll;
+    width: 602px;
+    min-width: 400px;
+    display: block;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.rate {
+    color: #00b126;
+    pointer-events: none;
+    font-size: 18px;
+}
+
+.tbl-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #009879;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.tbl-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.tbl-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.tbl-button :hover span {
+    padding-right: 25px;
+}
+
+.tbl-button :hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,3 +1,11 @@
+<?php
+// Initialize the session
+session_start();
+include_once('config.php');
+$query="select"
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-    <title>Dashboard</title>
+    <title>Home</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -21,43 +29,44 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="dashboard.html"><span class="las la-tachometer-alt"></span>
-                        <span>Dashboard</span></a>
+                    <a href="dashboard.php" class="active"><span class="las la-users"></span>
+                        <span>Home</span></a>
                 </li>
                 <li>
-                    <a href="sensor-data.html"><span class="las la-database"></span>
+                    <a href="sensor-data.php"><span class="las la-clipboard-list"></span>
                         <span>Sensor Data</span></a>
                 </li>
                 <li>
-                    <a href="about.html" class="active"><span class="las la-address-card"></span>
-                        <span>About Us</span></a>
-                </li>
-                <li>
-                    <a href="account.html"><span class="las la-user"></span>
-                        <span>Account</span></a>
+                    <a href="about.php"><span class="las la-user-circle"></span>
+                        <span>About</span></a>
                 </li>
             </ul>
         </div>
     </div>
 
+       
     <div class="main-content">
         <header>
             <h2>
                 <label for="nav-toggle">
                     <span class="las la-bars"></span>
-                </label> Dashboard
+                </label>Landslide Detection: An Early Alert Using Fuzzy Logic Algorithm
             </h2>
-
+            
             <div class="user-wrapper">
-                <img src="img/2.png" width="40px" height="40px" alt="">
-                <div>
-                    <h4>Username</h4>
-                    <small>Admin Profile</small>
-                </div>
+                <small><a href="logout.php">Logout</a></small>
             </div>
         </header>
 
+        <main>
+            <div>
+                
+            </div>
+        </main>
+
     </div>
+
+    
 
 
 
